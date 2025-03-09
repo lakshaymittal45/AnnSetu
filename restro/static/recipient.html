@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant-NGO Food Sharing</title>
+    <link rel="stylesheet" href="recipient.css">
+    <script defer src="recipient.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM6QzamW0kmu2dI-rVPctAFPtGkeloEQA&callback=initMap"></script>
+  
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Restaurant-NGO Food Sharing</title>
+      <link rel="stylesheet" href="recipient.css">
+      <script defer src="recipient.js"></script>
+      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM6QzamW0kmu2dI-rVPctAFPtGkeloEQA&callback=initMap"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  </head>
+  <body>
+      <header>
+          <nav class="navbar">
+              <ul>
+                  <li><a href="main.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="how.html">How It Works</a></li>
+                  <li><a href="leaderboard.html">leaderboard</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+           
+          </nav>
+      </header>
+      
+      
+      <div class="container">
+          <aside class="sidebar">
+              <h1>Recipient History</h1>
+              <div class="history-list">
+                  <div class="history-item"><span>12/03/25</span> - Fresh Fruits & Vegetables (3kg) - GreenGrocers Pvt. Ltd.</div>
+                  <div class="history-item"><span>10/03/25</span> - Mixed Veg & Chapati (7 servings) - Ramdharaam Caterings</div>
+                  <div class="history-item"><span>08/03/25</span> - Cooked Rice & Dal (5 servings) - Hyatt Regency</div>
+                  <div class="history-item"><span>07/03/25</span> - Bread & Buns (2 packs) - FreshBlakes Bakery</div>
+                  <div class="history-item"><span>05/03/25</span> - Milk & Dairy (2 litres) - Daily Dairy</div>
+              </div>
+              <button class="view-more">View More</button>
+          </aside>
+          <main class="content">
+              <div id="map"></div>
+             
+              <div class="food-filters">
+                 <input   type="text" placeholder="Search by Location">
+                  <br>
+                  <div class="filter-options">
+                      <button class="sort-btn">Sort by</button>
+                      <button>Cooked Meals</button>
+                      <button>Bakery/Bread</button>
+                  </div>
+                  <div class="food-list">
+                      <button>Pasta/Noodles</button>
+                      <button class="selected">Rice (Plain, Jeera, Fried)</button>
+                      <button>Dal (Tadka, Makhani, Yellow Dal)</button>
+                      <button class="selected">Roti/Naan/Paratha</button>
+                      <button class="selected">Sabzi (Paneer, Mixed Veg, Aloo Sabzi)</button>
+                      <button>Biryani/Pulao</button>
+                      <button>Sambar & Rasam</button>
+                      <button>Manchurian</button>
+                  </div>
+              </div>
+              <div >
+                  <button  class="clickme">PROCEED</button>
+              </div>
+          </main>
+      </div>
+  </body>
+  </html>
+
+        <!-- Right Sidebar (NGO Profile & Menu) -->
+        <aside class="right-sidebar">
+            <div class="profile">
+                <img src="ngo.jpg" alt="NGO Logo" class="ngo-logo">
+                <h2>Aashray  <br> <span>NGO</span></h2>
+                <p>📞 +91 82879653421</p>
+                <p>📍 256, Ground Floor, Sector 41, Chandigarh, 160036</p>
+            </div>
+
+            <div class="menu">
+              <div class="menu-item active"><i class="fas fa-chart-line"></i> Dashboard</div>
+              <div class="menu-item"><i class="fas fa-clock"></i> History</div>
+              <div class="menu-item"><i class="fas fa-wrench"></i> Support</div>
+              <div class="menu-item"><i class="fas fa-cog"></i>  <a href="setting.html" id="openSettings"> </a> Settings </div>
+          </div>
+          
+          <div class="logout">
+            <button><i class="fas fa-power-off"></i> Log Out</button>
+        </div>
+        
+        </aside>
+    </div>
+
+</body>
+</html>

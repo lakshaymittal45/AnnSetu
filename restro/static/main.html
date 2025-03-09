@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANN-DAN</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="how.html">How It Works</a></li>
+                <li><a href="leaderboard.html">leaderboard</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li> <button  class="login-btn"  onclick="login()">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Save Food, Share Meals,<br>Strengthen Communities.</h1>
+        <p>Because every meal saved is a step towards a hunger-free India.</p>
+        <div class="buttons">
+            <a href="restaurant.html"><button class="donor">Login as Donor </button></a> 
+            <a href="ngo.html"> <button class="recipient">Login as NGO</button></a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <i class="fa-solid fa-hand-holding-dollar icon"></i>
+            <h2>List a Donation</h2>
+            <p>Have extra food? Share it with those in need and help reduce waste!</p>
+           <a href="donation.html"><button>Donate Now</button></a>
+        </div>
+        <div class="feature highlighted">
+            <i class="fa-solid fa-utensils icon"></i>
+            <h2>Request a Meal</h2>
+            <p>Need a meal? See what's available near you and request it!</p>
+           <a href="recipient.html"> <button>Find Food</button></a>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-handshake-simple icon"></i>
+            <h2>Partner With Us</h2>
+            <p>Support our mission by collaborating to feed more people.</p>
+            <button>Get Involved</button>
+        </div>
+    </section>
+
+    <div class="stats-container">
+        <div class="stat">
+            <h2>5,24,000+</h2>
+            <p>Meals Saved</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+            <h2>2,30,000+</h2>
+            <p>People Fed</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+            <h2>12,500+</h2>
+            <p>Registered Donors</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+            <h2>1,120+</h2>
+            <p>Tons of Food Waste Reduced</p>
+        </div>
+    </div>
+
+    <section class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="how-steps">
+            <div class="how-step">
+                <img src="a5.jpg" alt="Donate Food">
+                <div class="how-text">
+                    <h3>Donors list extra food</h3>
+                    <p>Restaurants, grocery stores, and individuals can easily add surplus food to the platform in just a few clicks.</p>
+                </div>
+            </div>
+            <div class="how-step">
+                <img src="a6.jpg" alt="Request Food">
+                <div class="how-text">
+                    <h3>Recipients find and request meals</h3>
+                    <p>NGOs, shelters, and those in need can browse available food nearby and request it instantly.</p>
+                </div>
+            </div>
+            <div class="how-step">
+                <img src="a7.jpg" alt="Food Delivery">
+                <div class="how-text">
+                    <h3>Pickups are arranged for delivery</h3>
+                    <p>Donors and recipients coordinate pickups, ensuring the food reaches the right hands on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <img src="A4.jpg" alt="Food Donation Image" class="about-image">
+                <div class="about-text">
+                    <h2><strong>How</strong> <span class="highlight">We Do It?</span></h2>
+                    <p>In India, nearly <strong>40%</strong> of the food produced goes to waste, while over 
+                    <strong>195 million</strong> people struggle with hunger every day. At the same time, 
+                    restaurants, grocery stores, and households often have excess food that could still be 
+                    consumed. AnnDaan is working to change this by redirecting surplus food to those who 
+                    need it the most.</p>
+    
+                    <p>Our platform allows individuals, restaurants, and businesses to donate extra food easily. 
+                    NGOs, shelters, and those in need can find and request meals nearby, ensuring no food goes to 
+                    waste.</p>
+                    
+                    <a href="about.html" class="btn">More About Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <div class="bottom-banner">
+            <div class="last">
+          <hr>
+            <h2>Contact (+91 6006414632 )</h2>
+         
+            <br>
+           <h2> Email:
+            www.annsetu.in</h2>
+            <hr>
+        </div>
+        </div>
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

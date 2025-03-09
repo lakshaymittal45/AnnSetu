@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Restaurant App{% endblock %}</title>
+    <!-- Load the main CSS file -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Load page-specific CSS -->
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'frontend' %}" {% if request.path == '/' %}class="active"{% endif %}>Home</a></li>
+            <li><a href="{% url 'page' page_name='about' %}" {% if request.path == '/about/' %}class="active"{% endif %}>About</a></li>
+            <li><a href="{% url 'page' page_name='contact' %}" {% if request.path == '/contact/' %}class="active"{% endif %}>Contact</a></li>
+            <li><a href="{% url 'page' page_name='donation' %}" {% if request.path == '/donation/' %}class="active"{% endif %}>Donation</a></li>
+            <li><a href="{% url 'page' page_name='how' %}" {% if request.path == '/how/' %}class="active"{% endif %}>How</a></li>
+            <li><a href="{% url 'page' page_name='leaderboard' %}" {% if request.path == '/leaderboard/' %}class="active"{% endif %}>Leaderboard</a></li>
+            <li><a href="{% url 'page' page_name='mission' %}" {% if request.path == '/mission/' %}class="active"{% endif %}>Mission</a></li>
+            <li><a href="{% url 'page' page_name='ngo' %}" {% if request.path == '/ngo/' %}class="active"{% endif %}>NGO</a></li>
+            <li><a href="{% url 'page' page_name='recipient' %}" {% if request.path == '/recipient/' %}class="active"{% endif %}>Recipient</a></li>
+            <li><a href="{% url 'page' page_name='restaurant' %}" {% if request.path == '/restaurant/' %}class="active"{% endif %}>Restaurant</a></li>
+            <li><a href="{% url 'page' page_name='setting' %}" {% if request.path == '/setting/' %}class="active"{% endif %}>Setting</a></li>
+            <li><a href="{% url 'page' page_name='vision' %}" {% if request.path == '/vision/' %}class="active"{% endif %}>Vision</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
